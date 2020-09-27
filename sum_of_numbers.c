@@ -24,6 +24,7 @@ void main()
 
     c = a + b;
 
-    printf("The sum of two number is %s", c);
+    // printf("The sum of two number is %s", c);
+    printf("The sum of two number is %d", c);
 
 }
