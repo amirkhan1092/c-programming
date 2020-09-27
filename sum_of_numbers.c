@@ -14,7 +14,7 @@
 // values from user
 void main()
 {
-    
+
     int a, b, c;
     // a = 19
     printf("Enter value of a: \n");
@@ -24,6 +24,6 @@ void main()
 
     c = a + b;
 
-    printf("The sum of two number is %s");
+    printf("The sum of two number is %s", c);
 
 }
