@@ -4,7 +4,8 @@
 void main()
 {
     int a;
-    a = 10;
+    printf("Enter the number ");
+    scanf("%d", &a);
     if(a%2)
         printf("Odd");
     else
