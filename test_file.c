@@ -10,9 +10,9 @@
 
 int main()
 {
-    int x=3, y=4, z;
-    z = x-y*4*4/2;
-    printf("%d", z);
+    int a=10; 
+    printf("%X%x%ci%x",11,10,'s',12);
+
     return 0;
 
 }
