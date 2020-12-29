@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<stdlib.h>
 void main()
 {   int a;
     a = 10; 
@@ -9,14 +9,23 @@ void main()
     // }
     // while (a);
 
-    for(int x=0;x<=10;++x)
+    // for(int x=0;x<=10;++x)
+    // {
+    //     printf("this is my name ");
+    //     // scanf("%d", &a);
+    //     a--;
+    //     abort();
+
+    // }
+    // printf("%d", a);
+
+    short ch=0;
+    while(++ch)
     {
-        printf("this is my name ");
-        // scanf("%d", &a);
-        a--;
-        
+        printf("%d\t", ch);
+       
     }
-    printf("%d", a);
+  
   
     
 }
