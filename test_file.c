@@ -8,11 +8,11 @@
 //     printf("Value of a %d", a);
 // }
 
-int main()
+#include<stdio.h>
+
+main() 
 {
-    int a=10; 
-    printf("%X%x%ci%x",11,10,'s',12);
-
-    return 0;
-
+    unsigned char c = 'A'+257;
+   
+    printf("%c", c);
 }
