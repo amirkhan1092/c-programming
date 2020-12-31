@@ -8,11 +8,14 @@
 //     printf("Value of a %d", a);
 // }
 
-#include<stdio.h>
 
-main() 
+
+int main() 
 {
-    unsigned char c = 'A'+257;
    
-    printf("%c", c);
+    // printf("%c", c);
+    int a;
+    for(a=0;;)
+    printf("hello");
+
 }
