@@ -18,3 +18,15 @@ void main()
 }
 
 
+step1: start
+step2: declare the number n
+step3: read the number n
+step4: init count=0
+step5: while n > 0
+            n /= 10
+            count++
+step6: display count 
+step7: stop           
+
+
+
