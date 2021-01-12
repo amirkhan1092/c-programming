@@ -19,7 +19,7 @@ void main()
         // printf("%d", binary);
         temp *= 10;
     }
-    printf("%ld\n", binary);
+    printf("%4ld\n", binary);
     }
   
 }
