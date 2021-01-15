@@ -1,11 +1,23 @@
 #include<stdio.h>
-#define a 5
 
 void main()
 {
+    int marks[5]={2, 4, 2, 7, 2};
     
-    int arr[a] = {1, 3, 4, 8, 78, 56};
-    arr[5] = 100;
-    printf("%d %d", &arr[4], &arr[5]);
+    // for (int i = 0; i < 5; i++)
+    // {   printf("Enter marks at index %d:-", i);
+    //     scanf("%d", &marks[i]);
+    // }
+
+    // // marks[0] = 10;
+    // // marks[1] = 11;
+    // // marks[2] = 13;
+    // // marks[3] = 10;
+    // // marks[4] = 9;
+    // for(int i=0; i<5; i++)
+    // {
+    // printf("value at index %d is %d\n", i, marks[i]);
+    // }
+
 
 }
