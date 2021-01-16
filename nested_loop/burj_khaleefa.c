@@ -1,26 +1,26 @@
+// C-Program decimal integer into binary 
 #include<stdio.h>
 void main()
 {
-    int num;
-    int re;
-    long long binary=0;
+    int num, re;
     int temp=1;
-    int lastnum;
+    int value;
+    long long binary=0;
+    printf("Enter the value ");
+    scanf("%d", &value);
     int num1;
-    printf("enter the value ");
-    scanf("%d", &lastnum);
-    for(num=0; num<=lastnum; num++)
-    {
-    binary=0;
-    temp=1;
+for(num=0; num<=value; num++)
+{
     num1=num;
+    binary = 0;
+    temp = 1;
     while(num1>0)
     {
         re = num1%2;
-        binary = binary + re*temp;
-        num1 /= 2;
+        num1 = num1/2;
+        binary = binary + temp*re;
         temp = temp*10;
     }
-    printf("%ld\n", binary);
-    }
+    printf("%4ld\n", binary);
+}
 }
