@@ -2,7 +2,31 @@
 
 void main()
 {
-    int marks[5]={2, 4, 2, 7, 2};
+    
+
+    int marks[5];
+
+    marks[0] = 32;
+    
+
+
+
+
+
+   
+
+    
+    
+}
+
+
+
+
+
+
+
+
+
     
     // for (int i = 0; i < 5; i++)
     // {   printf("Enter marks at index %d:-", i);
@@ -20,4 +44,3 @@ void main()
     // }
 
 
-}
