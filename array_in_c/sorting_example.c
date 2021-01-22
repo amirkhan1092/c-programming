@@ -15,15 +15,17 @@ void main()
     for(int k=0; k<size; k++)
     {
     
-    for(i=0; i<size-1; i++)
+    for(i=0; i<size-1-k; i++)
     {
         if(arr[i]>arr[i+1])
         {
             temp = arr[i];
             arr[i] = arr[i+1];
             arr[i+1] = temp;
+           
         }
-    }  
+    }
+   
     }
 
     printf("\nOutput array is\n ");
