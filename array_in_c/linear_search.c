@@ -23,7 +23,7 @@ void main()
 
     printf("\nOutput section \n");
     if(flag)
-        printf("\nitem %d found in array\n", num);
+        printf("\nitem %d found in array at index %d\n", num, i);
     else
         printf("\nitem not found\n");
 
