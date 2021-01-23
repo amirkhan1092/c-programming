@@ -17,19 +17,19 @@ void main()
         printf("%d ", arr[i]);
 
     int pos, ele;
-    printf("Enter the element ");
+    printf("\nEnter the element: ");
     scanf("%d", &ele);
 
-    printf("\nenter the position for insert ");
+    printf("\nenter the position for insert: ");
     scanf("%d", &pos);
 
     N++; // increment length by 1
 
-    for(i=N-1; i>pos-1; i--)
+    for(i=N-1; i>pos; i--)
     {
         arr[i] = arr[i-1];
     }
-    arr[pos-1]=ele;
+    arr[pos]=ele;
 
 
     printf("\n After insertion Array is \n");

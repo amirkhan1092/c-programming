@@ -25,7 +25,6 @@ void main()
            
         }
     }
-   
     }
 
     printf("\nOutput array is\n ");
