@@ -5,37 +5,33 @@
 void main()
 {
     int arr[max];
-    int N, i, j;
+    int N, i, j, ele, pos;
     printf("Enter the number of elements :- ");
     scanf("%d", &N);
-    int tmp;
+
     for ( i = 0; i < N; i++)
+    {
         scanf("%d", &arr[i]);
-    
-    printf("\n user entered Array \n");
-    for(i=0; i<N; i++)
-        printf("%d ", arr[i]);
-
-    int pos, ele;
-    printf("\nEnter the element: ");
+    }
+    printf("enter the element ");
     scanf("%d", &ele);
+    printf("enter the position ");
+    scanf("%d",&pos);
 
-    printf("\nenter the position for insert: ");
-    scanf("%d", &pos);
-
-    N++; // increment length by 1
-
-    for(i=N-1; i>pos; i--)
+    N++;
+    for(i=N-1; i>pos-1; i--)
     {
         arr[i] = arr[i-1];
     }
-    arr[pos]=ele;
+    arr[pos-1] = ele;
 
 
-    printf("\n After insertion Array is \n");
+    
+    
+    // output section 
+    printf("\nOutput array after insertion\n");
     for(i=0; i<N; i++)
         printf("%d ", arr[i]);
-
 
     
 
