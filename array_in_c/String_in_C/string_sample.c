@@ -2,11 +2,11 @@
 
 void main()
 {   
-        int i;
-        char arr[10000000]="Amir";
+        char arr[1000]={'M', 'A', 'A', 'M', '\0'};
+        char name[100]="Amir";
+
         
-        printf("My name is %s", arr);
+        printf("%s", arr);
 
-        scanf("%s", &arr[0]);
-
+        
 }
