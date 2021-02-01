@@ -17,7 +17,7 @@ void main()
 
     gets(st);
 
-    while(st[len++] != '\0');
+    // while(st[len++] != '\0');
     for(len=0; st[len] != '\0'; len++ );
 
 
