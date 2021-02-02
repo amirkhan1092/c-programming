@@ -1,45 +1,42 @@
-#include<string.h>
-// frequency of each char
+// frequency of char 
+// read the string from user (single line/ single word)
+
 #include<stdio.h>
 
 void main()
 {
-    char st[100], reg[50];
-    int count = 0, i, j;
+    char arr[500], reg[100];
+    int i, count, flag;
 
-    puts("Enter the String: ");
-    // scanf("%s", st); // single word 
-    //scanf("%[^\n]s", st); // single line
-    gets(st);  // single line
-    
-    int flag, index=0;
+    printf("Enter the name: ");
+    // scanf("%s", arr);  // single word
+    // scanf("%[^\n]s", arr); // read complete line
+    gets(arr); // // read complete line
+    int index=0;
     // logic here
-    for(i=0; st[i] != '\0'; i++)
+    for(int k=0; arr[k] != '\0'; k++)
     {
     flag = 1;
     //
-    for(int k=0; k<index; k++)
-        if(st[i] == reg[k])
+    for(int p=0; p<index; p++)
+    {
+        if(arr[k] == reg[p])
         {
             flag = 0;
             break;
-        }    
-    if(flag)
-    {
-    reg[index++] = st[i];    
+        }
+    }
+
+    if(flag == 1)
+    {    
+    reg[index++] = arr[k]; 
     count = 0;
-    for(j=0; st[j] != '\0'; j++)
-        if(st[i] == st[j])
+    for(i=0; arr[i] != '\0'; i++)
+    {
+        if(arr[k] == arr[i])
             count++;
-            
-    
-    printf("char %c : %d\n", st[i], count);
     }
+    printf("char %c : %d\n", arr[k], count);
     }
 
-
-
-    
-
-
-}
+}}

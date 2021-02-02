@@ -1,10 +1,18 @@
+// write a statement to read the complete line in C_Programming 
+
+
 #include<stdio.h>
 void main()
 {
     char str[100];
+    printf("Write the name: ");
+    gets(str); // single line
+    // scanf("%[^\n]s", str); // single line
 
-    printf("Write the line ");
-    gets(str);
+    // printf("Welcome, %s", str);
 
-    printf("User entered %s", str);
+    puts("Welcome, ");-
+    puts(str);
+
+
 }

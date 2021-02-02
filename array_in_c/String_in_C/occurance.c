@@ -2,43 +2,49 @@
 
 void main()
 {
-    char st[100] = "GLA UNIVERSITY, Mathura";
-    char arr[100];
-    int items = 0;
-    int count = 0, c, flag; 
-    printf("String %s", st);
-    while(st[count++] != '\0');
+    char st[100] = "RAM BABU";
+    char reg[100];
 
-
-    for(int i=0; i<count-1; i++)
+    int c=0, flag, index=0;
+    char x;
+    
+    for(int i=0; st[i] != '\0'; i++)
     {
-        c = 0;
-        flag = 0;
-        // logic
-       
-            for(int x=0; x<items; x++)
+        x  = st[i];
+        flag = 1;
+        //
+        for(int p=0; p<index; p++)
+        {
+            if(reg[p] == x)
             {
-                if(st[i] == arr[x])
-                {
-                    flag = 1;
-                    break;
-                }   
+                flag = 0;
+                break;
             }
-        if(flag == 0)
-        {
-        arr[items++] = st[i];  
+        }
 
-        for(int j=0; j< count-1; j++)
+        if(flag == 1)
         {
-            if(st[i] == st[j])
+        c = 0; 
+        reg[index++] = x;
+        for(int j=0; st[j] != '\0'; j++)
+        {
+            if(x == st[j])
             {
                 c++;
             }
         }
-        printf("Char %c : [%d]\n", st[i], c);
+        printf("Char %c : [%d]\n", x, c);
 
-        }
+    }  }
     }
    
+/*
+input 
+4
+12 6 7 8 1 1
 
-}
+output
+2
+
+
+*/
